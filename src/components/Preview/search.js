@@ -30,7 +30,7 @@ export default function Search(pageNumber) {
             ]),
           ];
         });
-        setHasMore(res.data.next != undefined);
+        setHasMore(res.data.next !== undefined);
         setLoading(false);
       })
       .catch((e) => {

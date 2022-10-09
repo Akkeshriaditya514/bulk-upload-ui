@@ -2,9 +2,8 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 export default function Navbar(props) {
   let { count } = props;
-  // const style = {
-  //   marginBottom:'0px',
-  // }
+
+  // CSS for fix navbar on scroll
   const nav = {
     position: 'fixed',
     top: '0',
@@ -17,7 +16,7 @@ export default function Navbar(props) {
         {count} items in Product-List
       </Link>
       <ul>
-        <CustomLink to="/product">Products</CustomLink>
+        {/* <CustomLink to="/product">Products</CustomLink> */}
         <CustomLink to="/upload">Upload Product</CustomLink>
       </ul>
     </nav>

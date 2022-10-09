@@ -38,7 +38,10 @@ export const FileUploader = ({ setIsUpload }) => {
       });
   };
 
+
+
   return (
+    <div className="uploadBox">
     <form method="post" action="#" id="#" onSubmit={onSubmit}>
       <div className="form-group files">
         <label>Upload Your File </label>
@@ -47,5 +50,6 @@ export const FileUploader = ({ setIsUpload }) => {
 
       <button>Submit</button>
     </form>
+ </div>
   );
 };

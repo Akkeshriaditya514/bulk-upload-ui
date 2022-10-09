@@ -32,7 +32,7 @@ function App() {
       <div className="container">
         <Routes>
           <Route path="/" element={<Preview />} />
-          <Route path="/product" element={<Preview />} />
+          {/* <Route path="/product" element={<Preview />} /> */}
           <Route
             path="/upload"
             element={<FileUploader setIsUpload={setIsUpload} />}

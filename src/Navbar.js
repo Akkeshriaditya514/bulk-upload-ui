@@ -2,8 +2,17 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 export default function Navbar(props) {
   let { count } = props;
+  // const style = {
+  //   marginBottom:'0px',
+  // }
+  const nav = {
+    position: 'fixed',
+    top: '0',
+    width: '100%',
+    zIndex: '1',
+  }
   return (
-    <nav className="nav">
+    <nav className="nav" style={nav}>
       <Link to="/" className="site-title">
         {count} items in Product-List
       </Link>

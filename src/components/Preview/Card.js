@@ -19,7 +19,7 @@ export default function Card(props) {
             : "https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg"
         }
         className="product-img"
-       
+        alt="Product"
       />
       <b className="card__title">{ProductName}</b>
       <p className="card__description">{Description}</p>{" "}

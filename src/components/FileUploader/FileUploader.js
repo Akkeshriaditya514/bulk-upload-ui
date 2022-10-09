@@ -14,7 +14,7 @@ export const FileUploader = ({ setIsUpload }) => {
   const onSubmit = (e) => {
     e.preventDefault();
     // console.log();
-    if (files.length == 0) {
+    if (files.length === 0) {
       toast.error("No Files selected");
       return;
     }

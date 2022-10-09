@@ -21,7 +21,6 @@
     right: 0;
     height: 56px;
     content: "";
-    background-image: url(https://image.flaticon.com/icons/png/128/109/109612.png);
     display: block;
     margin: 0 auto;
     background-size: 100%;
@@ -47,7 +46,6 @@
 .uploadBox {
       margin: auto;
       width: 50%;
-      /* border: 3px solid green; */
       padding: 80px;
   }
 

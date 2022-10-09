@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 export default function Card(props) {
 
-  //
+  // Destructuring the props
   let {
     ProductName,
     Description,

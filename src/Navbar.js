@@ -10,6 +10,7 @@ export default function Navbar(props) {
     width: '100%',
     zIndex: '1',
   }
+  
   return (
     <nav className="nav" style={nav}>
       <Link to="/" className="site-title">

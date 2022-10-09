@@ -5,6 +5,8 @@ import "./style.css";
 export const Preview = () => {
   const [pageNumber, setPageNumber] = useState(1);
   const { loading, error, product, hasMore } = Search(pageNumber);
+
+  // Infinite Scrolling logic
   const observer = useRef();
   const lastProductElementRef = useCallback(
     (node) => {
@@ -16,7 +18,6 @@ export const Preview = () => {
         }
       });
       if (node) observer.current.observe(node);
-      console.log(node);
     },
     [loading, hasMore,pageNumber]
   );
@@ -28,6 +29,8 @@ export const Preview = () => {
         if (el.ProductImage) {
           img = el.ProductImage.split(",")[0];
         }
+
+        // Last card on UI
         if (product.length === index + 1) {
           return (
             <div className="col-md-4" ref={lastProductElementRef} key={el._id}>
